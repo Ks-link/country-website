@@ -27,8 +27,8 @@ body {
 	font-size: 1rem;
 	font-weight: 600;
 	line-height: 1.5;
-	/* color: ; */
-	/* background-color: ; */
+	color: #fafafa;
+	background-color: #05008e;
 }
 
 h1,
@@ -37,6 +37,8 @@ h3,
 h4,
 h5,
 h6 {}
+
+h1 {}
 
 p {}
 
@@ -97,7 +99,7 @@ header {
 	left: 0;
 	right: 0;
 	z-index: 999;
-	background-color: grey;
+	background-color: #ffb9f6;
 }
 
 .nav-bar {
@@ -109,13 +111,47 @@ header {
 .nav-bar li {
 	display: inline;
 	padding: 0.5rem;
-
 }
 
 
 /* Main
 --------------------------------------------- */
+.home-title {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.home-title h1 {
+	position: absolute;
+	z-index: 99;
+	bottom: 1.5rem;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #fafafa;
+	font-size: 4rem;
+}
+
+.quote {
+	text-align: center;
+	padding: 2rem;
+}
+
+.about {
+	padding: 2rem;
+	margin-bottom: 5rem;
+}
 
 
 /* Footer
 --------------------------------------------- */
+
+footer {
+	background-color: #ffb9f6;
+	color: #fafafa;
+	text-align: center;
+	margin: 0;
+	padding: 1rem;
+}
