@@ -23,7 +23,12 @@
 /* Typography
 --------------------------------------------- */
 body {
-	
+	font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.5;
+	/* color: ; */
+	/* background-color: ; */
 }
 
 h1,
@@ -31,57 +36,46 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-	
-}
+h6 {}
 
-p {
-	
-}
+p {}
 
 
 /* Elements
 --------------------------------------------- */
 ul {
-	
+	margin: 0;
+	padding: 0;
 }
 
-ol {
-	
-}
+ol {}
 
-dl {
-	
-}
+dl {}
 
-figure {
-	
-}
+figure {}
 
-table {
-	
-}
+table {}
 
 /* Links
 --------------------------------------------- */
 a {
-	
+	text-decoration: none;
 }
 
 a:visited {
-	
+	text-decoration: none;
 }
 
 a:hover {
-	
+	text-decoration: none;
 }
 
 a:focus {
-	
+	text-decoration: none;
 }
 
 a:active {
-	
+	text-decoration: none;
 }
 
 
@@ -97,6 +91,26 @@ a:active {
 
 /* Header
 --------------------------------------------- */
+header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	background-color: grey;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: right;
+	padding: 1rem;
+}
+
+.nav-bar li {
+	display: inline;
+	padding: 0.5rem;
+
+}
 
 
 /* Main
