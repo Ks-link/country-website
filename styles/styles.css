@@ -230,6 +230,10 @@ header {
 		width: 60%;
 		margin: 5rem auto;
 	}
+
+	.about h2 {
+		color: #000;
+	}
 }
 
 /*** ------------------ Discover Page ------------------ ***/
@@ -258,8 +262,36 @@ header {
 
 	.discover-main {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(auto, 22.5rem));
+		grid-template-columns: repeat(3, minmax(10rem, 37.5rem));
+		grid-template-rows: repeat(3, 22.5rem);
 		justify-content: center;
+		gap: 2rem;
+		margin: 5rem;
+	}
+
+	.discover-main figure {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+
+	.discover-main img {
+		object-fit: cover;
+		height: 100%;
+	}
+
+	.discover-main h2 {
+		font-size: 2rem;
+	}
+
+	.big-rock {
+		grid-column: 3/ 4;
+		grid-row: 1/ 3;
+	}
+
+	.elk-falls {
+		grid-column: 2/ 3;
+		grid-row: 2/ 4;
 	}
 }
 
