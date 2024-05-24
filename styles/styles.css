@@ -249,6 +249,10 @@ header {
 	right: 0;
 }
 
+.discover-title img {
+	display: block;
+}
+
 @media (min-width: 37.5em) {
 	.discover-title h1 {
 		bottom: 18rem;
@@ -298,6 +302,44 @@ header {
 
 /*** ------------------ Trivia Page ------------------ ***/
 
+.trivia-title {
+	position: relative;
+}
+
+.trivia-title h1 {
+	position: absolute;
+	background-color: #435e46c5;
+	bottom: 8rem;
+	left: 0;
+	right: 0;
+}
+
+.trivia-title h2 {
+	color: #024873;
+	margin: 2rem auto;
+	max-width: max-content;
+	border-bottom: solid #024873 .2rem;
+}
+
+.trivia-title img {
+	display: block;
+}
+
+.trivia-main img {
+	display: block;
+}
+
+.trivia-main figcaption {
+	background-color: #024873;
+	padding: 1rem;
+	backdrop-filter: blur(1rem);
+	border-radius: 0 0 1rem 1rem;
+	color: #fafafa;
+}
+
+.trivia-main figcaption h2 {
+	position: static;
+}
 
 /*** ------------------ Credits Page ------------------ ***/
 
