@@ -77,30 +77,26 @@
                 <h3>Submit your Campbell River trivia fact below to add to this list!</h3>
             </article>
 
-            <form class="form">
+            <form class="form" action="" method="post" name="trivia-submit">
                 <ul>
                     <li>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="user-name" value="Your Name">
+                        <input type="text" id="name" name="user-name" placeholder="Your Name">
                     </li>
 
                     <li>
                         <label for="mail">Email:</label>
-                        <input type="email" id="mail" name="user-email" value="Your Email">
+                        <input type="email" id="mail" name="user-email" placeholder="Your Email">
                     </li>
 
                     <li>
                         <label for="trivia-title">Trivia Title:</label>
-                        <textarea id="trivia-title" name="user-trivia-title">
-                            Add a title for your trivia fact
-                        </textarea>
+                        <input type="text" id="trivia-title" name="user-trivia-title" placeholder="Add a title for your trivia fact">
                     </li>
 
                     <li>
                         <label for="trivia-details">Trivia Details:</label>
-                        <textarea id="trivia-details" name="user-trivia-details">
-                            Add your trivia fact
-                        </textarea>
+                        <textarea id="trivia-details" name="user-trivia-details" placeholder="Add your trivia fact"></textarea>
                     </li>
 
                     <li class="button">

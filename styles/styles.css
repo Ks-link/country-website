@@ -75,27 +75,34 @@ img {
 	object-fit: cover;
 }
 
+
+/* form placeholder behavior */
+input::placeholder {
+	color: #999;
+	opacity: 1;
+}
+
+input::-ms-input-placeholder {
+	color: #999;
+}
+
+input:-ms-input-placeholder {
+	color: #999;
+}
+
 /* Links
 --------------------------------------------- */
 a {
 	text-decoration: none;
 }
 
-a:visited {
-	text-decoration: none;
-}
+a:visited {}
 
-a:hover {
-	text-decoration: none;
-}
+a:hover {}
 
-a:focus {
-	text-decoration: none;
-}
+a:focus {}
 
-a:active {
-	text-decoration: none;
-}
+a:active {}
 
 
 /*--------------------------------------------------------------
@@ -356,7 +363,7 @@ header {
 
 .form-text {
 	display: block;
-	margin: 1rem 0.5rem;
+	margin: 5rem 0.5rem 1rem;
 	border-radius: 1rem;
 	background-color: #024873;
 }
@@ -380,7 +387,7 @@ header {
 .form ul {
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 }
 
 .form li {
@@ -389,13 +396,12 @@ header {
 
 .form label {
 	display: inline-block;
-	max-width: max-content;
 	text-align: right;
 }
 
 .form input,
 .form textarea {
-	width: 10rem;
+	width: 100%;
 	box-sizing: border-box;
 	border: .0625rem solid #999;
 }
@@ -406,10 +412,34 @@ header {
 }
 
 .form textarea {
-	width: 100%;
+	max-width: 60rem;
+	vertical-align: top;
+	height: 10rem;
+}
+
+/*
+.form input,
+.form textarea {
+	width: 70%;
+	box-sizing: border-box;
+	border: .0625rem solid #999;
+}
+
+.form input:focus,
+.form textarea:focus {
+	border-color: #000;
+}
+
+.form textarea {
+	width: 70%;
 	max-width: 60rem;
 	vertical-align: top;
 }
+
+.form button {
+	margin-left: 6rem;
+}
+*/
 
 /*** ------------------ Credits Page ------------------ ***/
 
