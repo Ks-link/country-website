@@ -463,7 +463,7 @@ header {
 }
 
 
-@media (min-width: 37.5em) {
+@media (min-width: 57rem) {
 
 	.trivia-form {
 		max-width: 80rem;
@@ -471,8 +471,13 @@ header {
 		margin: 5rem auto 1rem;
 	}
 
-	/* .form input,
+	.form-text {
+		padding: 1rem;
+	}
+
+	.form input,
 	.form textarea {
+		max-width: 62rem;
 		width: 70%;
 		box-sizing: border-box;
 		border: .0625rem solid #999;
@@ -487,13 +492,15 @@ header {
 	.form label {
 		display: inline-block;
 		text-align: right;
+		padding-left: 4rem;
+		width: 12rem;
 	}
 
+
 	.form button {
-		margin-left: 7rem;
-	} */
-
-
+		margin-left: 12.2rem;
+		/* this matches up submit button to the edge of the form */
+	}
 }
 
 /*** ------------------ Credits Page ------------------ ***/
