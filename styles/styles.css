@@ -55,24 +55,23 @@ ul {
 	padding: 0;
 }
 
-figure {
-	position: relative;
-	margin: 2rem 0.5rem;
-}
-
-figcaption h2 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: 0;
-	padding: .2rem;
-	text-align: center;
-	backdrop-filter: blur(1rem);
-}
-
 img {
 	object-fit: cover;
+}
+
+
+/* form placeholder behavior */
+input::placeholder {
+	color: #999;
+	opacity: 1;
+}
+
+input::-ms-input-placeholder {
+	color: #999;
+}
+
+input:-ms-input-placeholder {
+	color: #999;
 }
 
 /* Links
@@ -81,21 +80,13 @@ a {
 	text-decoration: none;
 }
 
-a:visited {
-	text-decoration: none;
-}
+a:visited {}
 
-a:hover {
-	text-decoration: none;
-}
+a:hover {}
 
-a:focus {
-	text-decoration: none;
-}
+a:focus {}
 
-a:active {
-	text-decoration: none;
-}
+a:active {}
 
 
 /*--------------------------------------------------------------
@@ -204,6 +195,10 @@ header {
 	padding: .5rem;
 }
 
+.about h2 {
+	color: #000;
+}
+
 @media (min-width: 37.5em) {
 
 	.home-title h1 {
@@ -244,9 +239,30 @@ header {
 .discover-title h1 {
 	background-color: #594a52c5;
 	position: absolute;
-	bottom: 3rem;
+	bottom: 2rem;
 	left: 0;
 	right: 0;
+}
+
+.discover-title img {
+	display: block;
+}
+
+.discover-main figure {
+	position: relative;
+	margin: 2rem 0.5rem;
+}
+
+.discover-main figcaption h2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: .2rem;
+	text-align: center;
+	background-color: #00000070;
+	backdrop-filter: blur(1rem);
 }
 
 @media (min-width: 37.5em) {
@@ -262,7 +278,7 @@ header {
 
 	.discover-main {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(10rem, 37.5rem));
+		grid-template-columns: repeat(3, minmax(10rem, 30rem));
 		grid-template-rows: repeat(3, 22.5rem);
 		justify-content: center;
 		gap: 2rem;
@@ -298,6 +314,194 @@ header {
 
 /*** ------------------ Trivia Page ------------------ ***/
 
+.trivia-title {
+	position: relative;
+}
+
+.trivia-title h1 {
+	position: absolute;
+	background-color: #435e46c5;
+	bottom: 6.5rem;
+	left: 0;
+	right: 0;
+}
+
+.trivia-title h2 {
+	color: #024873;
+	margin: 2rem auto;
+	max-width: max-content;
+	border-bottom: solid #024873 .2rem;
+}
+
+.trivia-title img {
+	display: block;
+}
+
+.trivia-main figure {
+	margin: 2rem 0.5rem;
+}
+
+.trivia-main img {
+	display: block;
+}
+
+.trivia-main figcaption {
+	background-color: #024873;
+	padding: 1rem;
+	border-radius: 0 0 1rem 1rem;
+	color: #fafafa;
+}
+
+.trivia-main figcaption h2 {
+	margin: 0;
+	padding: .2rem;
+	text-align: center;
+}
+
+.trivia-main figcaption h2 {
+	position: static;
+}
+
+@media (min-width: 37.5em) {
+	.trivia-title img {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.trivia-title h1 {
+		bottom: 20rem;
+		font-size: 5rem;
+	}
+
+	.trivia-title h2 {
+		font-size: 3rem;
+		border-bottom: solid #024873 .5rem;
+		margin: 5rem auto;
+	}
+
+	.trivia-main {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+		gap: 3rem;
+		max-width: 120rem;
+		margin: 0 auto;
+	}
+
+	.trivia-main figure {
+		max-width: 40%;
+	}
+
+	.trivia-main figcaption {
+		align-self: stretch;
+	}
+
+	.trivia-main figcaption h2 {
+		max-width: max-content;
+		margin: 0 auto;
+	}
+
+	.trivia-main figcaption p {
+		max-width: 30rem;
+		padding: 0 1rem;
+		margin: 1rem auto;
+	}
+}
+
+
+/* ----------- form styling ----------- */
+
+.form-text {
+	display: block;
+	margin: 5rem 0.5rem 0rem;
+	border-radius: 1rem;
+	background-color: #024873;
+	border-radius: 1rem 1rem 0 0;
+}
+
+.form-text h2,
+.form-text h3 {
+	color: #fafafa;
+	margin: 0;
+	padding: 1rem;
+}
+
+.form {
+	display: block;
+	padding: 1rem;
+	margin: 0 0.5rem 2rem;
+	border: 0.2rem solid #024873;
+	border-radius: 0 0 1rem 1rem;
+}
+
+.form ul {
+	list-style: none;
+	padding: 0;
+}
+
+.form li {
+	margin-top: 1rem;
+}
+
+.form input,
+.form textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: .0625rem solid #999;
+}
+
+.form input:focus,
+.form textarea:focus {
+	border-color: #000;
+}
+
+.form textarea {
+	max-width: 60rem;
+	vertical-align: top;
+	height: 10rem;
+}
+
+
+@media (min-width: 57rem) {
+
+	.trivia-form {
+		max-width: 80rem;
+		width: 80%;
+		margin: 5rem auto 1rem;
+	}
+
+	.form-text {
+		padding: 1rem;
+	}
+
+	.form input,
+	.form textarea {
+		max-width: 62rem;
+		width: 70%;
+		box-sizing: border-box;
+		border: .0625rem solid #999;
+	}
+
+	.form textarea {
+		width: 70%;
+		max-width: 60rem;
+		vertical-align: top;
+	}
+
+	.form label {
+		display: inline-block;
+		text-align: right;
+		padding-left: 4rem;
+		width: 12rem;
+	}
+
+
+	.form button {
+		margin-left: 12.2rem;
+		/* this matches up submit button to the edge of the form */
+	}
+}
 
 /*** ------------------ Credits Page ------------------ ***/
 
