@@ -90,18 +90,23 @@ textarea:-ms-input-placeholder {
 }
 
 
-/* Table styling */
+/* Table elements */
 
 table,
 caption,
 tr,
 th,
 td {
-	border: .0625rem solid #024873;
+	border: .2rem solid #024873;
 	padding: 0.5rem;
 	border-collapse: collapse;
 }
 
+caption {
+	font-size: 1.5rem;
+	background-color: #024873;
+	color: #fafafa;
+}
 
 /* Links
 --------------------------------------------- */
@@ -558,11 +563,66 @@ header {
 .discover-credits,
 .trivia-credits,
 .credit-page-credits {
-	display: flex;
-	justify-content: center;
 	margin: 2rem;
-	/* max-width: 80rem; */
-	width: 90%;
+	/* max-width: max-content; */
+	overflow-x: auto;
+}
+
+table,
+caption,
+tr,
+th,
+td {
+	border: .2rem solid #024873;
+	padding: 0.5rem;
+	border-collapse: collapse;
+}
+
+caption {
+	font-size: 1.5rem;
+	background-color: #024873;
+	color: #fafafa;
+}
+
+@media (min-width: 37.5em) {
+
+	.credits-hero {
+		width: 100%;
+		height: calc(100vh - 97px);
+		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
+	}
+
+	.credits-title h1 {
+		bottom: 7rem;
+		font-size: 5rem;
+	}
+
+	.home-credits,
+	.discover-credits,
+	.trivia-credits,
+	.credit-page-credits {
+		margin: 5rem auto;
+		max-width: 60rem;
+		width: 80%;
+	}
+
+	table {
+		width: 100%;
+	}
+
+	.col-description {
+		width: 50%;
+	}
+
+	.col-creator {
+		width: 20%;
+		text-align: center;
+	}
+
+	.col-source {
+		width: 30%;
+		text-align: center;
+	}
 }
 
 
