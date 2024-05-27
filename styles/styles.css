@@ -50,6 +50,7 @@ h1 {
 
 /* Elements
 --------------------------------------------- */
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -61,6 +62,7 @@ img {
 
 
 /* form placeholder behavior */
+
 input::placeholder {
 	color: #999;
 	opacity: 1;
@@ -73,6 +75,33 @@ input::-ms-input-placeholder {
 input:-ms-input-placeholder {
 	color: #999;
 }
+
+textarea::placeholder {
+	color: #999;
+	opacity: 1;
+}
+
+textarea::-ms-input-placeholder {
+	color: #999;
+}
+
+textarea:-ms-input-placeholder {
+	color: #999;
+}
+
+
+/* Table styling */
+
+table,
+caption,
+tr,
+th,
+td {
+	border: .0625rem solid #024873;
+	padding: 0.5rem;
+	border-collapse: collapse;
+}
+
 
 /* Links
 --------------------------------------------- */
@@ -136,6 +165,7 @@ header {
 }
 
 @media (min-width: 37.5em) {
+
 	.nav-bar {
 		display: grid;
 		grid-template-columns: minmax(auto, 30em) minmax(auto, 20em);
@@ -202,14 +232,15 @@ header {
 @media (min-width: 37.5em) {
 
 	.home-title h1 {
-		bottom: 13rem;
 		font-size: 7rem;
 		backdrop-filter: blur(5px);
+		bottom: 7rem;
 	}
 
 	.home-video {
 		width: 100%;
-		height: 100vh;
+		height: calc(100vh - 97px);
+		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 		object-fit: cover;
 	}
 
@@ -244,7 +275,7 @@ header {
 	right: 0;
 }
 
-.discover-title img {
+.discover-hero {
 	display: block;
 }
 
@@ -267,13 +298,14 @@ header {
 
 @media (min-width: 37.5em) {
 	.discover-title h1 {
-		bottom: 18rem;
 		font-size: 5rem;
+		bottom: 7rem;
 	}
 
-	.discover-img {
+	.discover-hero {
 		width: 100%;
-		height: 100vh;
+		height: calc(100vh - 97px);
+		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 	}
 
 	.discover-main {
@@ -333,7 +365,7 @@ header {
 	border-bottom: solid #024873 .2rem;
 }
 
-.trivia-title img {
+.trivia-hero {
 	display: block;
 }
 
@@ -363,9 +395,10 @@ header {
 }
 
 @media (min-width: 37.5em) {
-	.trivia-title img {
+	.trivia-hero {
 		width: 100%;
-		height: 100vh;
+		height: calc(100vh - 97px);
+		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 	}
 
 	.trivia-title h1 {
@@ -504,6 +537,33 @@ header {
 }
 
 /*** ------------------ Credits Page ------------------ ***/
+
+.credits-title {
+	position: relative;
+}
+
+.credits-title h1 {
+	position: absolute;
+	background-color: #404e59be;
+	bottom: 2.5rem;
+	left: 0;
+	right: 0;
+}
+
+.credits-hero {
+	display: block;
+}
+
+.home-credits,
+.discover-credits,
+.trivia-credits,
+.credit-page-credits {
+	display: flex;
+	justify-content: center;
+	margin: 2rem;
+	max-width: 80rem;
+	width: 90%;
+}
 
 
 /* Footer
