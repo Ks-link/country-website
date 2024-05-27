@@ -248,9 +248,14 @@ header {
 @media (min-width: 37.5em) {
 
 	.home-title h1 {
-		font-size: 7rem;
+		font-size: 5rem;
 		backdrop-filter: blur(5px);
-		bottom: 7rem;
+		bottom: 4rem;
+		left: 8rem;
+		max-width: max-content;
+		/* margin: 0 auto; */
+		padding: 1rem 4rem;
+		border-radius: 3rem;
 	}
 
 	.home-video {
@@ -315,7 +320,7 @@ header {
 @media (min-width: 37.5em) {
 	.discover-title h1 {
 		font-size: 5rem;
-		bottom: 7rem;
+		bottom: 10rem;
 	}
 
 	.discover-hero {
@@ -604,7 +609,7 @@ caption {
 	}
 
 	.credits-title h1 {
-		bottom: 7rem;
+		bottom: 10rem;
 		font-size: 5rem;
 	}
 
