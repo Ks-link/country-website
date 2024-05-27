@@ -561,7 +561,7 @@ header {
 	display: flex;
 	justify-content: center;
 	margin: 2rem;
-	max-width: 80rem;
+	/* max-width: 80rem; */
 	width: 90%;
 }
 
