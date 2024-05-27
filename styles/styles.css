@@ -47,9 +47,20 @@ h1 {
 	color: #fafafa;
 }
 
+.screen-reader-text:focus {
+	background-color: #024873;
+	color: #fafafa;
+	border: #fafafa dotted .1875rem;
+}
 
 /* Elements
 --------------------------------------------- */
+
+html {
+	scroll-padding-top: 6rem;
+	/* width of header */
+	scroll-behavior: smooth;
+}
 
 ul {
 	margin: 0;
