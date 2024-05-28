@@ -47,6 +47,7 @@ h1 {
 	text-align: center;
 	font-size: 2.2rem;
 	color: #fafafa;
+	text-transform: uppercase;
 }
 
 caption h2 {
@@ -321,6 +322,10 @@ header {
 .discover-main figure {
 	position: relative;
 	margin: 2rem 0.5rem;
+}
+
+.discover-main img {
+	display: block;
 }
 
 .discover-main figcaption h2 {
