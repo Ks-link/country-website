@@ -629,9 +629,7 @@ header {
 .discover-credits,
 .trivia-credits,
 .credit-page-credits {
-	margin: 2rem;
-	/* max-width: max-content; */
-	overflow-x: auto;
+	margin: 2rem 0.5rem;
 }
 
 .home-credits h2,
@@ -646,8 +644,9 @@ caption,
 tr,
 th,
 td {
+	font-size: 1rem;
 	border: .2rem solid #024873;
-	padding: 0.5rem;
+	padding: 0.1rem;
 	border-collapse: collapse;
 }
 
@@ -672,6 +671,17 @@ caption {
 		padding: 1rem 4rem;
 		border-radius: 3rem;
 		bottom: 5vh;
+	}
+
+	table,
+	caption,
+	tr,
+	th,
+	td {
+		font-size: 1rem;
+		border: .2rem solid #024873;
+		padding: 0.5rem;
+		border-collapse: collapse;
 	}
 
 	.home-credits,
