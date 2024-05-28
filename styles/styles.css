@@ -473,23 +473,18 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-items: stretch;
 		gap: 3rem;
 		max-width: 120rem;
-		margin: 0 auto;
 	}
 
 	.trivia-main figure {
-		max-width: 40%;
+		width: 40%;
 	}
 
-	.trivia-main figcaption {
-		align-self: stretch;
-	}
-
-	.trivia-main figcaption h2 {
-		max-width: max-content;
-		margin: 0 auto;
+	.trivia-main img {
+		width: 100%;
+		max-height: 25rem;
+		object-fit: cover;
 	}
 
 	.trivia-main figcaption p {
