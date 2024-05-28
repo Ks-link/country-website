@@ -222,10 +222,17 @@ header {
 
 .home-title h1 {
 	background-color: #02385954;
+	backdrop-filter: blur(5px);
 	position: absolute;
-	bottom: 41vh;
+	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
+	height: fit-content;
+	width: fit-content;
+	margin: auto;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
 }
 
 .home-video {
@@ -258,12 +265,8 @@ header {
 
 	.home-title h1 {
 		font-size: 5rem;
-		backdrop-filter: blur(5px);
-		max-width: max-content;
-		margin: 4rem auto;
-		padding: 1rem 4rem;
+		padding: 1rem 3rem;
 		border-radius: 3rem;
-		bottom: 5vh;
 	}
 
 	.home-video {
@@ -290,13 +293,6 @@ header {
 	}
 }
 
-@media (min-width: 62.5rem) {
-	.home-title h1 {
-		bottom: 6rem;
-		left: 6rem;
-		margin: 0;
-	}
-}
 
 /*** ------------------ Discover Page ------------------ ***/
 .discover-title {
@@ -305,10 +301,17 @@ header {
 
 .discover-title h1 {
 	background-color: #594a52c5;
+	backdrop-filter: blur(5px);
 	position: absolute;
-	bottom: 40vh;
+	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
+	height: fit-content;
+	width: fit-content;
+	margin: auto;
+	padding: 0.5rem 2rem;
+	border-radius: 1rem;
 }
 
 .discover-hero {
@@ -344,12 +347,8 @@ header {
 
 	.discover-title h1 {
 		font-size: 5rem;
-		backdrop-filter: blur(5px);
-		max-width: max-content;
-		margin: 4rem auto;
 		padding: 1rem 4rem;
 		border-radius: 3rem;
-		bottom: 5vh;
 	}
 
 	.discover-hero {
@@ -392,28 +391,27 @@ header {
 	}
 }
 
-@media (min-width: 62.5rem) {
-	.discover-title h1 {
-		bottom: 6rem;
-		left: 6rem;
-		margin: 0;
-	}
-}
-
 
 
 /*** ------------------ Trivia Page ------------------ ***/
 
-.trivia-title {
+.trivia-title .hero-wrap {
 	position: relative;
 }
 
-.trivia-title h1 {
-	position: absolute;
+.hero-wrap h1 {
 	background-color: #435e46c5;
-	bottom: 52vh;
+	backdrop-filter: blur(5px);
+	position: absolute;
+	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
+	height: fit-content;
+	width: fit-content;
+	margin: auto;
+	padding: 0.5rem 2rem;
+	border-radius: 1rem;
 }
 
 .trivia-title h2 {
@@ -462,14 +460,10 @@ header {
 		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 	}
 
-	.trivia-title h1 {
+	.hero-wrap h1 {
 		font-size: 5rem;
-		backdrop-filter: blur(5px);
-		max-width: max-content;
-		margin: 10rem auto;
 		padding: 1rem 4rem;
 		border-radius: 3rem;
-		bottom: 16vh;
 	}
 
 	.trivia-title h2 {
@@ -501,14 +495,6 @@ header {
 		max-width: 30rem;
 		padding: 0 1rem;
 		margin: 1rem auto;
-	}
-}
-
-@media (min-width: 62.5rem) {
-	.trivia-title h1 {
-		bottom: 16rem;
-		left: 6rem;
-		margin: 0;
 	}
 }
 
@@ -610,11 +596,18 @@ header {
 }
 
 .credits-title h1 {
-	position: absolute;
 	background-color: #404e59be;
-	bottom: 40vh;
+	backdrop-filter: blur(5px);
+	position: absolute;
+	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
+	height: fit-content;
+	width: fit-content;
+	margin: auto;
+	padding: 0.5rem 2rem;
+	border-radius: 1rem;
 }
 
 .credits-hero {
@@ -665,12 +658,8 @@ caption {
 
 	.credits-title h1 {
 		font-size: 5rem;
-		backdrop-filter: blur(5px);
-		max-width: max-content;
-		margin: 4rem auto;
 		padding: 1rem 4rem;
 		border-radius: 3rem;
-		bottom: 5vh;
 	}
 
 	table,
@@ -709,13 +698,6 @@ caption {
 	}
 }
 
-@media (min-width: 62.5rem) {
-	.credits-title h1 {
-		bottom: 6rem;
-		left: 6rem;
-		margin: 0;
-	}
-}
 
 /* Footer
 --------------------------------------------- */
