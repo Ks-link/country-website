@@ -49,6 +49,12 @@ h1 {
 	color: #fafafa;
 }
 
+caption h2 {
+	font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
 h3 {
 	font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
@@ -86,25 +92,9 @@ input::placeholder {
 	opacity: 1;
 }
 
-input::-ms-input-placeholder {
-	color: #999;
-}
-
-input:-ms-input-placeholder {
-	color: #999;
-}
-
 textarea::placeholder {
 	color: #999;
 	opacity: 1;
-}
-
-textarea::-ms-input-placeholder {
-	color: #999;
-}
-
-textarea:-ms-input-placeholder {
-	color: #999;
 }
 
 
@@ -136,7 +126,10 @@ a:visited {}
 
 a:hover {}
 
-a:focus {}
+a:focus {
+	border: #023859 solid .15rem;
+	padding: .3rem;
+}
 
 a:active {}
 
@@ -245,6 +238,10 @@ header {
 .quote {
 	text-align: center;
 	padding: 1rem;
+}
+
+.quote h3 {
+	color: #000;
 }
 
 .about {
@@ -630,6 +627,13 @@ header {
 	margin: 2rem;
 	/* max-width: max-content; */
 	overflow-x: auto;
+}
+
+.home-credits h2,
+.discover-credits h2,
+.trivia-credits h2,
+.credit-page-credits h2 {
+	margin: 0;
 }
 
 table,

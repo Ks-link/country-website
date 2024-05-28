@@ -37,6 +37,8 @@
 /* ^ this was pulled from   https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/   though.. */
 
 
+/* User prefs */
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;
@@ -44,6 +46,27 @@
 }
 
 @media (prefers-color-scheme: dark) {}
+
+
+/* form placeholder behavior */
+
+input::-ms-input-placeholder {
+  color: #999;
+}
+
+input:-ms-input-placeholder {
+  color: #999;
+}
+
+textarea::-ms-input-placeholder {
+  color: #999;
+}
+
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+
 
 /* Document
    ========================================================================== */
