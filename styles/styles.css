@@ -222,13 +222,17 @@ header {
 .home-title h1 {
 	background-color: #02385954;
 	position: absolute;
-	bottom: 3rem;
+	bottom: 41vh;
 	left: 0;
 	right: 0;
 }
 
 .home-video {
 	border-bottom: #023859 solid 0.1rem;
+	width: 100%;
+	height: calc(100vh - 64px);
+	/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
+	object-fit: cover;
 }
 
 .quote {
@@ -250,16 +254,14 @@ header {
 	.home-title h1 {
 		font-size: 5rem;
 		backdrop-filter: blur(5px);
-		bottom: 4rem;
-		left: 8rem;
 		max-width: max-content;
-		/* margin: 0 auto; */
+		margin: 4rem auto;
 		padding: 1rem 4rem;
 		border-radius: 3rem;
+		bottom: 5vh;
 	}
 
 	.home-video {
-		width: 100%;
 		height: calc(100vh - 97px);
 		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 		object-fit: cover;
@@ -283,6 +285,14 @@ header {
 	}
 }
 
+@media (min-width: 62.5rem) {
+	.home-title h1 {
+		bottom: 6rem;
+		left: 6rem;
+		margin: 0;
+	}
+}
+
 /*** ------------------ Discover Page ------------------ ***/
 .discover-title {
 	position: relative;
@@ -291,13 +301,17 @@ header {
 .discover-title h1 {
 	background-color: #594a52c5;
 	position: absolute;
-	bottom: 2rem;
+	bottom: 40vh;
 	left: 0;
 	right: 0;
 }
 
 .discover-hero {
 	display: block;
+	width: 100%;
+	height: calc(100vh - 64px);
+	/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
+	object-fit: cover;
 }
 
 .discover-main figure {
@@ -318,13 +332,18 @@ header {
 }
 
 @media (min-width: 37.5em) {
+
 	.discover-title h1 {
 		font-size: 5rem;
-		bottom: 10rem;
+		backdrop-filter: blur(5px);
+		max-width: max-content;
+		margin: 4rem auto;
+		padding: 1rem 4rem;
+		border-radius: 3rem;
+		bottom: 5vh;
 	}
 
 	.discover-hero {
-		width: 100%;
 		height: calc(100vh - 97px);
 		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 	}
@@ -364,6 +383,15 @@ header {
 	}
 }
 
+@media (min-width: 62.5rem) {
+	.discover-title h1 {
+		bottom: 6rem;
+		left: 6rem;
+		margin: 0;
+	}
+}
+
+
 
 /*** ------------------ Trivia Page ------------------ ***/
 
@@ -374,7 +402,7 @@ header {
 .trivia-title h1 {
 	position: absolute;
 	background-color: #435e46c5;
-	bottom: 6.5rem;
+	bottom: 52vh;
 	left: 0;
 	right: 0;
 }
@@ -388,6 +416,10 @@ header {
 
 .trivia-hero {
 	display: block;
+	width: 100%;
+	height: calc(100vh - 64px);
+	/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
+	object-fit: cover;
 }
 
 .trivia-main figure {
@@ -417,14 +449,18 @@ header {
 
 @media (min-width: 37.5em) {
 	.trivia-hero {
-		width: 100%;
 		height: calc(100vh - 97px);
 		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 	}
 
 	.trivia-title h1 {
-		bottom: 20rem;
 		font-size: 5rem;
+		backdrop-filter: blur(5px);
+		max-width: max-content;
+		margin: 10rem auto;
+		padding: 1rem 4rem;
+		border-radius: 3rem;
+		bottom: 16vh;
 	}
 
 	.trivia-title h2 {
@@ -460,6 +496,14 @@ header {
 		max-width: 30rem;
 		padding: 0 1rem;
 		margin: 1rem auto;
+	}
+}
+
+@media (min-width: 62.5rem) {
+	.trivia-title h1 {
+		bottom: 16rem;
+		left: 6rem;
+		margin: 0;
 	}
 }
 
@@ -566,13 +610,17 @@ header {
 .credits-title h1 {
 	position: absolute;
 	background-color: #404e59be;
-	bottom: 2.5rem;
+	bottom: 40vh;
 	left: 0;
 	right: 0;
 }
 
 .credits-hero {
 	display: block;
+	width: 100%;
+	height: calc(100vh - 64px);
+	/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
+	object-fit: cover;
 }
 
 .home-credits,
@@ -603,14 +651,18 @@ caption {
 @media (min-width: 37.5em) {
 
 	.credits-hero {
-		width: 100%;
 		height: calc(100vh - 97px);
 		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 	}
 
 	.credits-title h1 {
-		bottom: 10rem;
 		font-size: 5rem;
+		backdrop-filter: blur(5px);
+		max-width: max-content;
+		margin: 4rem auto;
+		padding: 1rem 4rem;
+		border-radius: 3rem;
+		bottom: 5vh;
 	}
 
 	.home-credits,
@@ -641,6 +693,13 @@ caption {
 	}
 }
 
+@media (min-width: 62.5rem) {
+	.credits-title h1 {
+		bottom: 6rem;
+		left: 6rem;
+		margin: 0;
+	}
+}
 
 /* Footer
 --------------------------------------------- */
