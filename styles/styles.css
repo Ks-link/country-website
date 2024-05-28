@@ -475,6 +475,7 @@ header {
 		justify-content: center;
 		gap: 3rem;
 		max-width: 120rem;
+		margin: 0 auto;
 	}
 
 	.trivia-main figure {
