@@ -37,6 +37,8 @@ h3,
 h4,
 h5,
 h6 {
+	font-weight: 400;
+	font-family: 'Poetsen One', Georgia, 'Times New Roman', Times, serif;
 	color: #fafafa;
 }
 
@@ -45,6 +47,17 @@ h1 {
 	text-align: center;
 	font-size: 2.2rem;
 	color: #fafafa;
+}
+
+caption h2 {
+	font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
 }
 
 .screen-reader-text:focus {
@@ -79,25 +92,9 @@ input::placeholder {
 	opacity: 1;
 }
 
-input::-ms-input-placeholder {
-	color: #999;
-}
-
-input:-ms-input-placeholder {
-	color: #999;
-}
-
 textarea::placeholder {
 	color: #999;
 	opacity: 1;
-}
-
-textarea::-ms-input-placeholder {
-	color: #999;
-}
-
-textarea:-ms-input-placeholder {
-	color: #999;
 }
 
 
@@ -129,7 +126,10 @@ a:visited {}
 
 a:hover {}
 
-a:focus {}
+a:focus {
+	border: #023859 solid .15rem;
+	padding: .3rem;
+}
 
 a:active {}
 
@@ -222,18 +222,26 @@ header {
 .home-title h1 {
 	background-color: #02385954;
 	position: absolute;
-	bottom: 3rem;
+	bottom: 41vh;
 	left: 0;
 	right: 0;
 }
 
 .home-video {
 	border-bottom: #023859 solid 0.1rem;
+	width: 100%;
+	height: calc(100vh - 64px);
+	/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
+	object-fit: cover;
 }
 
 .quote {
 	text-align: center;
 	padding: 1rem;
+}
+
+.quote h3 {
+	color: #000;
 }
 
 .about {
@@ -248,13 +256,16 @@ header {
 @media (min-width: 37.5em) {
 
 	.home-title h1 {
-		font-size: 7rem;
+		font-size: 5rem;
 		backdrop-filter: blur(5px);
-		bottom: 7rem;
+		max-width: max-content;
+		margin: 4rem auto;
+		padding: 1rem 4rem;
+		border-radius: 3rem;
+		bottom: 5vh;
 	}
 
 	.home-video {
-		width: 100%;
 		height: calc(100vh - 97px);
 		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 		object-fit: cover;
@@ -278,6 +289,14 @@ header {
 	}
 }
 
+@media (min-width: 62.5rem) {
+	.home-title h1 {
+		bottom: 6rem;
+		left: 6rem;
+		margin: 0;
+	}
+}
+
 /*** ------------------ Discover Page ------------------ ***/
 .discover-title {
 	position: relative;
@@ -286,13 +305,17 @@ header {
 .discover-title h1 {
 	background-color: #594a52c5;
 	position: absolute;
-	bottom: 2rem;
+	bottom: 40vh;
 	left: 0;
 	right: 0;
 }
 
 .discover-hero {
 	display: block;
+	width: 100%;
+	height: calc(100vh - 64px);
+	/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
+	object-fit: cover;
 }
 
 .discover-main figure {
@@ -313,13 +336,18 @@ header {
 }
 
 @media (min-width: 37.5em) {
+
 	.discover-title h1 {
 		font-size: 5rem;
-		bottom: 7rem;
+		backdrop-filter: blur(5px);
+		max-width: max-content;
+		margin: 4rem auto;
+		padding: 1rem 4rem;
+		border-radius: 3rem;
+		bottom: 5vh;
 	}
 
 	.discover-hero {
-		width: 100%;
 		height: calc(100vh - 97px);
 		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 	}
@@ -359,6 +387,15 @@ header {
 	}
 }
 
+@media (min-width: 62.5rem) {
+	.discover-title h1 {
+		bottom: 6rem;
+		left: 6rem;
+		margin: 0;
+	}
+}
+
+
 
 /*** ------------------ Trivia Page ------------------ ***/
 
@@ -369,7 +406,7 @@ header {
 .trivia-title h1 {
 	position: absolute;
 	background-color: #435e46c5;
-	bottom: 6.5rem;
+	bottom: 52vh;
 	left: 0;
 	right: 0;
 }
@@ -383,6 +420,10 @@ header {
 
 .trivia-hero {
 	display: block;
+	width: 100%;
+	height: calc(100vh - 64px);
+	/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
+	object-fit: cover;
 }
 
 .trivia-main figure {
@@ -412,14 +453,18 @@ header {
 
 @media (min-width: 37.5em) {
 	.trivia-hero {
-		width: 100%;
 		height: calc(100vh - 97px);
 		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 	}
 
 	.trivia-title h1 {
-		bottom: 20rem;
 		font-size: 5rem;
+		backdrop-filter: blur(5px);
+		max-width: max-content;
+		margin: 10rem auto;
+		padding: 1rem 4rem;
+		border-radius: 3rem;
+		bottom: 16vh;
 	}
 
 	.trivia-title h2 {
@@ -432,23 +477,19 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-items: stretch;
 		gap: 3rem;
 		max-width: 120rem;
 		margin: 0 auto;
 	}
 
 	.trivia-main figure {
-		max-width: 40%;
+		width: 40%;
 	}
 
-	.trivia-main figcaption {
-		align-self: stretch;
-	}
-
-	.trivia-main figcaption h2 {
-		max-width: max-content;
-		margin: 0 auto;
+	.trivia-main img {
+		width: 100%;
+		max-height: 25rem;
+		object-fit: cover;
 	}
 
 	.trivia-main figcaption p {
@@ -458,26 +499,31 @@ header {
 	}
 }
 
+@media (min-width: 62.5rem) {
+	.trivia-title h1 {
+		bottom: 16rem;
+		left: 6rem;
+		margin: 0;
+	}
+}
+
 
 /* ----------- form styling ----------- */
 
 .form-text {
 	display: block;
 	margin: 5rem 0.5rem 0rem;
-	border-radius: 1rem;
 	background-color: #024873;
 	border-radius: 1rem 1rem 0 0;
 }
 
 .form-text h2,
 .form-text h3 {
-	color: #fafafa;
 	margin: 0;
 	padding: 1rem;
 }
 
 .form {
-	display: block;
 	padding: 1rem;
 	margin: 0 0.5rem 2rem;
 	border: 0.2rem solid #024873;
@@ -547,7 +593,7 @@ header {
 
 
 	.form button {
-		margin-left: 12.2rem;
+		margin-left: 12.3rem;
 		/* this matches up submit button to the edge of the form */
 	}
 }
@@ -561,13 +607,17 @@ header {
 .credits-title h1 {
 	position: absolute;
 	background-color: #404e59be;
-	bottom: 2.5rem;
+	bottom: 40vh;
 	left: 0;
 	right: 0;
 }
 
 .credits-hero {
 	display: block;
+	width: 100%;
+	height: calc(100vh - 64px);
+	/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
+	object-fit: cover;
 }
 
 .home-credits,
@@ -577,6 +627,13 @@ header {
 	margin: 2rem;
 	/* max-width: max-content; */
 	overflow-x: auto;
+}
+
+.home-credits h2,
+.discover-credits h2,
+.trivia-credits h2,
+.credit-page-credits h2 {
+	margin: 0;
 }
 
 table,
@@ -598,14 +655,18 @@ caption {
 @media (min-width: 37.5em) {
 
 	.credits-hero {
-		width: 100%;
 		height: calc(100vh - 97px);
 		/* ^This calc is to compensate for the sticky header, the hero img will fit the screen properly now! */
 	}
 
 	.credits-title h1 {
-		bottom: 7rem;
 		font-size: 5rem;
+		backdrop-filter: blur(5px);
+		max-width: max-content;
+		margin: 4rem auto;
+		padding: 1rem 4rem;
+		border-radius: 3rem;
+		bottom: 5vh;
 	}
 
 	.home-credits,
@@ -636,6 +697,13 @@ caption {
 	}
 }
 
+@media (min-width: 62.5rem) {
+	.credits-title h1 {
+		bottom: 6rem;
+		left: 6rem;
+		margin: 0;
+	}
+}
 
 /* Footer
 --------------------------------------------- */
